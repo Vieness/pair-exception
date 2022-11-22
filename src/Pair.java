@@ -33,8 +33,8 @@ public class Pair<S, I> {
     public static void arrayIndexOutOfBoundsException() {
         int[] arr = new int[10];
         for (int i = 0; i < arr.length+1; i++) {
-            System.out.println(arr[i]);
             if (arr[i] > arr.length) throw new ArrayIndexOutOfBoundsException("array overflow " + i);
+            System.out.println(arr[i]);
         }
     }
 
